@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/my_background"
+    tools:context=".view.FragmentHome">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/welcome_text"
+        android:textSize="36sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:id="@+id/buttonStart"
+        android:text="@string/button_start"
+        android:textSize="36sp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/pink"
+        app:cornerRadius="8dp"/>
+
+
+
+</LinearLayout>

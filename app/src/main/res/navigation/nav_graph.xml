@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/fragmentHome">
+
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.techmania.flagquiz.view.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentQuiz"
+            app:destination="@id/fragmentQuiz" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentQuiz"
+        android:name="com.techmania.flagquiz.view.FragmentQuiz"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" >
+        <action
+            android:id="@+id/action_fragmentQuiz_to_fragmentResult"
+            app:destination="@id/fragmentResult" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentResult"
+        android:name="com.techmania.flagquiz.view.FragmentResult"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="correct"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="wrong"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <argument
+            android:name="empty"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>
